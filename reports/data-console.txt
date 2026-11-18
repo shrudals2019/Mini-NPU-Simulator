@@ -1,0 +1,29 @@
+size_5 필터 로드 완료 (Cross, X)
+size_13 필터 로드 완료 (Cross, X)
+size_25 필터 로드 완료 (Cross, X)
+
+size_5_1 | Cross=0.9 X=0.8999999999999999 | 판정=UNDECIDED expected=X | FAIL: epsilon 동점 규칙
+
+size_5_2 | Cross=8.9 X=0.1 | 판정=Cross expected=Cross | PASS
+
+size_13_1 | Cross=0.3 X=14.70000000000001 | 판정=X expected=X | PASS
+
+size_13_2 | Cross=7.499999999999997 X=7.5 | 판정=UNDECIDED expected=Cross | FAIL: epsilon 동점 규칙
+
+size_25_1 | Cross=4.9 X=4.899999999999999 | 판정=UNDECIDED expected=X | FAIL: epsilon 동점 규칙
+
+size_25_2 | Cross=52.9 X=0.1 | 판정=Cross expected=Cross | PASS
+
+[성능 분석] 한 필터 MAC 함수 호출 평균 / 1000회
+크기       2D 평균(ms)    1D 평균(ms)    MAC 횟수(N²)    2D/1D
+ 3x3        0.001931       0.001138              9     1.696
+ 5x5        0.003981       0.002270             25     1.754
+13x13       0.017569       0.011964            169     1.468
+25x25       0.053250       0.044048            625     1.209
+1D 변환 시간 제외. 실제 속도 향상은 환경에 따라 달라질 수 있습니다.
+
+[결과 요약] 총 테스트: 6 / 통과: 3 / 실패: 3
+- size_5_1: epsilon 동점 규칙
+- size_13_2: epsilon 동점 규칙
+- size_25_1: epsilon 동점 규칙
+리포트 저장: C:\Users\daysc\Documents\Codex\2026-11-14\new-chat\outputs\mini-npu\reports\data-report.json

@@ -1,0 +1,26 @@
+size_5 필터 로드 완료 (Cross, X)
+size_13 필터 로드 완료 (Cross, X)
+size_25 필터 로드 완료 (Cross, X)
+
+size_5_1 | Cross=9 X=1 | 판정=Cross expected=Cross | PASS
+
+size_5_2 | Cross=1 X=9 | 판정=X expected=X | PASS
+
+size_13_1 | Cross=25 X=1 | 판정=Cross expected=Cross | PASS
+
+size_13_2 | Cross=1 X=25 | 판정=X expected=X | PASS
+
+size_25_1 | Cross=49 X=1 | 판정=Cross expected=Cross | PASS
+
+size_25_2 | Cross=1 X=49 | 판정=X expected=X | PASS
+
+[성능 분석] 한 필터 MAC 함수 호출 평균 / 1000회
+크기       2D 평균(ms)    1D 평균(ms)    MAC 횟수(N²)    2D/1D
+ 3x3        0.001495       0.000915              9     1.634
+ 5x5        0.003051       0.001605             25     1.901
+13x13       0.012885       0.009432            169     1.366
+25x25       0.040791       0.034565            625     1.180
+1D 변환 시간 제외. 실제 속도 향상은 환경에 따라 달라질 수 있습니다.
+
+[결과 요약] 총 테스트: 6 / 통과: 6 / 실패: 0
+리포트 저장: C:\Users\daysc\Documents\Codex\2026-11-14\new-chat\outputs\mini-npu\reports\sample-data-report.json

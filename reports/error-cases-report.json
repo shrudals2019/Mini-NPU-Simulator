@@ -1,0 +1,126 @@
+{
+  "source": "C:\\Users\\daysc\\Documents\\Codex\\2026-11-14\\new-chat\\outputs\\mini-npu\\error-cases.json",
+  "epsilon": 1e-09,
+  "total": 10,
+  "passed": 6,
+  "failed": 4,
+  "cases": [
+    {
+      "id": "size_5_1",
+      "passed": true,
+      "score_cross": 9.0,
+      "score_x": 1.0,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": ""
+    },
+    {
+      "id": "size_5_2",
+      "passed": true,
+      "score_cross": 1.0,
+      "score_x": 9.0,
+      "prediction": "X",
+      "expected": "X",
+      "reason": ""
+    },
+    {
+      "id": "size_13_1",
+      "passed": true,
+      "score_cross": 25.0,
+      "score_x": 1.0,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": ""
+    },
+    {
+      "id": "size_13_2",
+      "passed": true,
+      "score_cross": 1.0,
+      "score_x": 25.0,
+      "prediction": "X",
+      "expected": "X",
+      "reason": ""
+    },
+    {
+      "id": "size_25_1",
+      "passed": true,
+      "score_cross": 49.0,
+      "score_x": 1.0,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": ""
+    },
+    {
+      "id": "size_25_2",
+      "passed": true,
+      "score_cross": 1.0,
+      "score_x": 49.0,
+      "prediction": "X",
+      "expected": "X",
+      "reason": ""
+    },
+    {
+      "id": "size_5_3",
+      "passed": false,
+      "score_cross": 0.0,
+      "score_x": 0.0,
+      "prediction": "UNDECIDED",
+      "expected": "X",
+      "reason": "epsilon 동점 규칙"
+    },
+    {
+      "id": "size_5_4",
+      "passed": false,
+      "reason": "데이터/스키마 오류: 행 개수 오류: 5행이 필요합니다."
+    },
+    {
+      "id": "size_5_5",
+      "passed": false,
+      "reason": "데이터/스키마 오류: 지원하지 않는 라벨: 'unknown'"
+    },
+    {
+      "id": "bad_key",
+      "passed": false,
+      "reason": "데이터/스키마 오류: 패턴 키는 size_N_idx 형식이어야 합니다."
+    }
+  ],
+  "performance": [
+    {
+      "size": 3,
+      "operations": 9,
+      "mean_2d_ms": 0.0010797,
+      "mean_1d_ms": 0.0006584,
+      "median_2d_ms": 0.001,
+      "median_1d_ms": 0.0006,
+      "repeats": 1000
+    },
+    {
+      "size": 5,
+      "operations": 25,
+      "mean_2d_ms": 0.0020019,
+      "mean_1d_ms": 0.0012203,
+      "median_2d_ms": 0.002,
+      "median_1d_ms": 0.0012,
+      "repeats": 1000
+    },
+    {
+      "size": 13,
+      "operations": 169,
+      "mean_2d_ms": 0.0193121,
+      "mean_1d_ms": 0.0134406,
+      "median_2d_ms": 0.0176,
+      "median_1d_ms": 0.0113,
+      "repeats": 1000
+    },
+    {
+      "size": 25,
+      "operations": 625,
+      "mean_2d_ms": 0.0691858,
+      "mean_1d_ms": 0.0576873,
+      "median_2d_ms": 0.0675,
+      "median_1d_ms": 0.0569,
+      "repeats": 1000
+    }
+  ],
+  "filter_errors": {}
+}

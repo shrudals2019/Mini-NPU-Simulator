@@ -1,0 +1,102 @@
+{
+  "source": "C:\\Users\\daysc\\Documents\\Codex\\2026-11-14\\new-chat\\outputs\\mini-npu\\sample-data.json",
+  "epsilon": 1e-09,
+  "total": 6,
+  "passed": 6,
+  "failed": 0,
+  "cases": [
+    {
+      "id": "size_5_1",
+      "passed": true,
+      "score_cross": 9.0,
+      "score_x": 1.0,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": ""
+    },
+    {
+      "id": "size_5_2",
+      "passed": true,
+      "score_cross": 1.0,
+      "score_x": 9.0,
+      "prediction": "X",
+      "expected": "X",
+      "reason": ""
+    },
+    {
+      "id": "size_13_1",
+      "passed": true,
+      "score_cross": 25.0,
+      "score_x": 1.0,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": ""
+    },
+    {
+      "id": "size_13_2",
+      "passed": true,
+      "score_cross": 1.0,
+      "score_x": 25.0,
+      "prediction": "X",
+      "expected": "X",
+      "reason": ""
+    },
+    {
+      "id": "size_25_1",
+      "passed": true,
+      "score_cross": 49.0,
+      "score_x": 1.0,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": ""
+    },
+    {
+      "id": "size_25_2",
+      "passed": true,
+      "score_cross": 1.0,
+      "score_x": 49.0,
+      "prediction": "X",
+      "expected": "X",
+      "reason": ""
+    }
+  ],
+  "performance": [
+    {
+      "size": 3,
+      "operations": 9,
+      "mean_2d_ms": 0.001495,
+      "mean_1d_ms": 0.0009147,
+      "median_2d_ms": 0.0012,
+      "median_1d_ms": 0.0007,
+      "repeats": 1000
+    },
+    {
+      "size": 5,
+      "operations": 25,
+      "mean_2d_ms": 0.0030509,
+      "mean_1d_ms": 0.0016053,
+      "median_2d_ms": 0.0022,
+      "median_1d_ms": 0.0014,
+      "repeats": 1000
+    },
+    {
+      "size": 13,
+      "operations": 169,
+      "mean_2d_ms": 0.0128847,
+      "mean_1d_ms": 0.0094318,
+      "median_2d_ms": 0.0101,
+      "median_1d_ms": 0.0074,
+      "repeats": 1000
+    },
+    {
+      "size": 25,
+      "operations": 625,
+      "mean_2d_ms": 0.0407911,
+      "mean_1d_ms": 0.034565,
+      "median_2d_ms": 0.0336,
+      "median_1d_ms": 0.0285,
+      "repeats": 1000
+    }
+  ],
+  "filter_errors": {}
+}

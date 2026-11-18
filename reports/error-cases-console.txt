@@ -1,0 +1,38 @@
+size_5 필터 로드 완료 (Cross, X)
+size_13 필터 로드 완료 (Cross, X)
+size_25 필터 로드 완료 (Cross, X)
+
+size_5_1 | Cross=9 X=1 | 판정=Cross expected=Cross | PASS
+
+size_5_2 | Cross=1 X=9 | 판정=X expected=X | PASS
+
+size_13_1 | Cross=25 X=1 | 판정=Cross expected=Cross | PASS
+
+size_13_2 | Cross=1 X=25 | 판정=X expected=X | PASS
+
+size_25_1 | Cross=49 X=1 | 판정=Cross expected=Cross | PASS
+
+size_25_2 | Cross=1 X=49 | 판정=X expected=X | PASS
+
+size_5_3 | Cross=0 X=0 | 판정=UNDECIDED expected=X | FAIL: epsilon 동점 규칙
+
+size_5_4 | FAIL: 데이터/스키마 오류: 행 개수 오류: 5행이 필요합니다.
+
+size_5_5 | FAIL: 데이터/스키마 오류: 지원하지 않는 라벨: 'unknown'
+
+bad_key | FAIL: 데이터/스키마 오류: 패턴 키는 size_N_idx 형식이어야 합니다.
+
+[성능 분석] 한 필터 MAC 함수 호출 평균 / 1000회
+크기       2D 평균(ms)    1D 평균(ms)    MAC 횟수(N²)    2D/1D
+ 3x3        0.001080       0.000658              9     1.640
+ 5x5        0.002002       0.001220             25     1.640
+13x13       0.019312       0.013441            169     1.437
+25x25       0.069186       0.057687            625     1.199
+1D 변환 시간 제외. 실제 속도 향상은 환경에 따라 달라질 수 있습니다.
+
+[결과 요약] 총 테스트: 10 / 통과: 6 / 실패: 4
+- size_5_3: epsilon 동점 규칙
+- size_5_4: 데이터/스키마 오류: 행 개수 오류: 5행이 필요합니다.
+- size_5_5: 데이터/스키마 오류: 지원하지 않는 라벨: 'unknown'
+- bad_key: 데이터/스키마 오류: 패턴 키는 size_N_idx 형식이어야 합니다.
+리포트 저장: C:\Users\daysc\Documents\Codex\2026-11-14\new-chat\outputs\mini-npu\reports\error-cases-report.json

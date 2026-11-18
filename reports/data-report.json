@@ -1,0 +1,102 @@
+{
+  "source": "C:\\Users\\daysc\\Documents\\Codex\\2026-11-14\\new-chat\\outputs\\mini-npu\\data.json",
+  "epsilon": 1e-09,
+  "total": 6,
+  "passed": 3,
+  "failed": 3,
+  "cases": [
+    {
+      "id": "size_5_1",
+      "passed": false,
+      "score_cross": 0.9,
+      "score_x": 0.8999999999999999,
+      "prediction": "UNDECIDED",
+      "expected": "X",
+      "reason": "epsilon 동점 규칙"
+    },
+    {
+      "id": "size_5_2",
+      "passed": true,
+      "score_cross": 8.9,
+      "score_x": 0.1,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": ""
+    },
+    {
+      "id": "size_13_1",
+      "passed": true,
+      "score_cross": 0.3,
+      "score_x": 14.700000000000008,
+      "prediction": "X",
+      "expected": "X",
+      "reason": ""
+    },
+    {
+      "id": "size_13_2",
+      "passed": false,
+      "score_cross": 7.499999999999997,
+      "score_x": 7.5,
+      "prediction": "UNDECIDED",
+      "expected": "Cross",
+      "reason": "epsilon 동점 규칙"
+    },
+    {
+      "id": "size_25_1",
+      "passed": false,
+      "score_cross": 4.9,
+      "score_x": 4.899999999999999,
+      "prediction": "UNDECIDED",
+      "expected": "X",
+      "reason": "epsilon 동점 규칙"
+    },
+    {
+      "id": "size_25_2",
+      "passed": true,
+      "score_cross": 52.9,
+      "score_x": 0.1,
+      "prediction": "Cross",
+      "expected": "Cross",
+      "reason": ""
+    }
+  ],
+  "performance": [
+    {
+      "size": 3,
+      "operations": 9,
+      "mean_2d_ms": 0.0019307,
+      "mean_1d_ms": 0.0011384,
+      "median_2d_ms": 0.002,
+      "median_1d_ms": 0.0012,
+      "repeats": 1000
+    },
+    {
+      "size": 5,
+      "operations": 25,
+      "mean_2d_ms": 0.0039809,
+      "mean_1d_ms": 0.0022702,
+      "median_2d_ms": 0.0031,
+      "median_1d_ms": 0.0018,
+      "repeats": 1000
+    },
+    {
+      "size": 13,
+      "operations": 169,
+      "mean_2d_ms": 0.0175691,
+      "mean_1d_ms": 0.0119641,
+      "median_2d_ms": 0.016,
+      "median_1d_ms": 0.0112,
+      "repeats": 1000
+    },
+    {
+      "size": 25,
+      "operations": 625,
+      "mean_2d_ms": 0.05325,
+      "mean_1d_ms": 0.0440485,
+      "median_2d_ms": 0.0431,
+      "median_1d_ms": 0.037,
+      "repeats": 1000
+    }
+  ],
+  "filter_errors": {}
+}
